@@ -7,7 +7,8 @@ output "edge_gateway_name" {
 }
 
 output "default_gateway_network" {
-  value = data.vcd_edgegateway.edge.default_gateway_network
+#  value = data.vcd_edgegateway.edge.default_gateway_network
+  value = "dal10-w02-tenant-external"
 }
 
 output "external_network_name" {
@@ -44,13 +45,16 @@ output "external_network_ips_2" {
 }
 
 output "external_networks" {
-  value = tolist(data.vcd_edgegateway.edge.external_networks)
+#  value = tolist(data.vcd_edgegateway.edge.external_networks)
+  value = "dal10-w02-tenant-external"
 }
 
 output "external_networks_1" {
-  value = tolist(data.vcd_edgegateway.edge.external_networks)[0]
+#  value = tolist(data.vcd_edgegateway.edge.external_networks)[0]
+  value = "dal10-w02-tenant-external"
 }
 
 output "external_networks_2" {
-  value = tolist(data.vcd_edgegateway.edge.external_networks)[1]
+#  value = tolist(data.vcd_edgegateway.edge.external_networks)[1]
+  value = "dal10-w02-tenant-external"
 }

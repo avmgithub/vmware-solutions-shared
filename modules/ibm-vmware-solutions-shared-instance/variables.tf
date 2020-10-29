@@ -1,40 +1,34 @@
 variable "vcd_user" {
-  description = "Your vCloud Director username ..."
+  description = "vCloud Director username."
   default = ""
 }
 
 variable "vcd_password" {
-  description = "Your vCloud Director instance password  ..."
+  description = "vCloud Director instance password."
   default = ""
 }
 
 variable "vcd_org" {
-  description = "Your vCloud Director organization name/id ..."
-  default = ""
-}
-
-variable "vcd_vdc" {
-  description = "Your vCloud Director virtual datacenter ..."
-  default = ""
-}
-
-// vcd_vdc_edge
-variable "vdc_edge_gateway_name" {
-  description = "Your vCloud Director virtual datacenter edge gateway..."
+  description = "vCloud Director organization name/id."
   default = ""
 }
 
 variable "vcd_url" {
-  description = "Your vCloud Director url ..."
+  description = "vCloud Director url."
+  default = "https://daldir01.vmware-solutions.cloud.ibm.com/api"
+}
+
+variable "vdc_name" {
+  description = "vCloud Director virtual datacenter."
   default = ""
 }
 
-variable "vcd_max_retry_timeout" {
-  description = "Your vCloud Director retry timeout ..."
-  default = 10
+variable "vdc_edge_gateway_name" {
+  description = "vCloud Director virtual datacenter edge gateway name."
+  default = ""
 }
 
-variable "vcd_allow_unverified_ssl" {
-  description = "You ..."
+variable "allow_ssh" {
+  description = "Set to false to not configure SSH into the VM."
   default = true
 }

@@ -162,4 +162,8 @@ resource "vcd_vapp_vm" "vm_1" {
     ip_allocation_mode = "POOL"
     is_primary         = true
   }
+
+  customization {
+    admin_password = "password"
+  }
 }

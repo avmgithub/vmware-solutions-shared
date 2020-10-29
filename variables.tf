@@ -1,6 +1,6 @@
 variable "vcd_user" {
   description = "vCloud Director username."
-  default = "admin"
+  default = ""
 }
 
 variable "vcd_password" {
@@ -20,7 +20,7 @@ variable "vcd_url" {
 
 variable "vdc_name" {
   description = "vCloud Director virtual datacenter."
-  default = "vmware-tutorial"
+  default = ""
 }
 
 variable "vdc_edge_gateway_name" {
