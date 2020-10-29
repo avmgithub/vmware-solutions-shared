@@ -1,16 +1,16 @@
 variable "vcd_user" {
   description = "vCloud Director username."
-  default = ""
+  default = "test"
 }
 
 variable "vcd_password" {
   description = "vCloud Director instance password."
-  default = ""
+  default = "test"
 }
 
 variable "vcd_org" {
   description = "vCloud Director organization name/id."
-  default = ""
+  default = "test"
 }
 
 variable "vcd_url" {
@@ -20,12 +20,12 @@ variable "vcd_url" {
 
 variable "vdc_name" {
   description = "vCloud Director virtual datacenter."
-  default = ""
+  default = "test"
 }
 
 variable "vdc_edge_gateway_name" {
   description = "vCloud Director virtual datacenter edge gateway name."
-  default = ""
+  default = "test"
 }
 
 variable "allow_ssh" {
