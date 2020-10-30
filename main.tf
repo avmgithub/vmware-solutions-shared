@@ -6,7 +6,6 @@ provider "vcd" {
   url      = var.vcd_url
   vdc      = var.vdc_name
   version  = "~> 3.0.0"
-  source = "vmware/vcd"
 }
 
 # Used to obtain information from the already deployed Edge Gateway
